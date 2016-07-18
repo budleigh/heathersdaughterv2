@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAEA,CAAE;EACA,aAAa,EAAE,YAAY;;AAG7B,OAAQ;EACN,gBAAgB,EAPF,OAAO;EAQrB,UAAU,EAAE,KAAK",
+"sources": ["../../src/client/scss/hd.scss"],
 "names": [],
 "file": "hd.css"
 }

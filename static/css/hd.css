@@ -1,3 +1,8 @@
+* {
+  border-radius: 0 !important; }
 
+.navbar {
+  background-color: #D4B32B;
+  min-height: 200px; }
 
 /*# sourceMappingURL=hd.css.map */

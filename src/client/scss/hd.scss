@@ -1,1 +1,10 @@
 $primary-color: #D4B32B;
+
+* {
+  border-radius: 0 !important;
+}
+
+.navbar {
+  background-color: $primary-color;
+  min-height: 200px;
+}
