@@ -5,7 +5,16 @@
   "main": "hd.py",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "bower install"
+    "watchify": "watchify -vd -p browserify-hmr -e src/client/main.js -o static/js/build.js",
+    "dev": "npm-run-all --parallel watchify",
+    "build": "cross-env NODE_ENV=production browserify -e src/client/main.js | uglifyjs -c warnings=false -m > static/js/build.js"
+    "postinstall": "npm run build"
+  },
+  "browserify": {
+    "transform": [
+      "vueify",
+      "babelify"
+    ]
   },
   "repository": {
     "type": "git",
@@ -21,10 +30,37 @@
   },
   "homepage": "https://github.com/budleigh/heathersdaughterv2#readme",
   "dependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.0.0",
+    "babel-preset-es2015": "^6.0.0",
+    "babel-preset-stage-2": "^6.11.0",
+    "babel-runtime": "^6.0.0",
+    "babelify": "^7.3.0",
     "bower": "^1.7.9",
+    "browserify": "^12.0.1",
+    "browserify-hmr": "^0.3.1",
+    "cross-env": "^1.0.8",
+    "css-loader": "^0.23.1",
+    "eslint": "^1.10.3",
+    "eslint-plugin-html": "^1.1.0",
     "grunt": "^1.0.1",
-    "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-uglify": "^1.0.1"
+    "grunt-contrib-uglify": "^1.0.1",
+    "http-server": "^0.9.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.15",
+    "karma-browserify": "^4.4.2",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-spec-reporter": "0.0.23",
+    "npm-run-all": "^1.8.0",
+    "phantomjs-prebuilt": "^2.1.3",
+    "proxyquireify": "^3.0.1",
+    "uglify-js": "^2.5.0",
+    "vue": "^1.0.26",
+    "vue-hot-reload-api": "^1.3.3",
+    "vueify": "^8.5.2",
+    "watchify": "^3.4.0"
   }
 }
