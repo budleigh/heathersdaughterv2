@@ -1,6 +1,6 @@
 <template>
     <div>
-        {{ total }}
+        ${{ total }}
         {{ counts | json }}
         <ul>
             <li v-for="item in menu">
@@ -9,26 +9,28 @@
                 <button v-on:click="remove(item)">-</button>
             </li>
         </ul>
+        <input type="text" v-model="orderer.name" placeholder="Your name"/>
+        <input type="text" v-model="orderer.address" placeholder="Your address"/>
+        <input type="text" v-model="orderer.phone" placeholder="Phone number"/>
+        <textarea v-model="orderer.instructions" placeholder="Special instructions"></textarea>
+        <button v-on:click="order">Order</button>
     </div>
 </template>
 
 <script>
+    var $ = require('jquery')
+    var menu = require('../menu.js')
+
     export default {
         data () {
             return {
                 cart: [],
-                menu: [
-                    {
-                        name: 'Cinnamon bombs',
-                        price: 2,
-                        quantity: 2
-                    },
-                    {
-                        name: 'Almond brulee',
-                        price: 2,
-                        quantity: 2
-                    }
-                ]
+                menu: menu,
+                orderer: {
+                    name: '',
+                    address: '',
+                    instructions: ''
+                }
             }
         },
 
@@ -61,6 +63,29 @@
                         break
                     }
                 }
+            },
+
+            order: function () {
+                var self = this
+                $.post({
+                    url: '/order/',
+                    data: {
+                        order: this.counts,
+                        orderer: this.orderer
+                    },
+                    success: function (data) {
+                        console.log('ordered successfuly!')
+                        self.clear()
+                    },
+                    error: function () {
+                        console.log('something went wrong')
+                    }
+                })
+            },
+
+            clear: function () {
+                this.cart = []
+                this.orderer = {}
             }
         }
     }
