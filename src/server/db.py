@@ -1,9 +1,20 @@
 import datetime
 from peewee import *
 
-database = SqliteDatabase('hd.db')
+database = PostgresqlDatabase(
+    'hdtest', 
+    user='yoozer', 
+    password='Generalkdrama1{}'
+)
 
-class Order(Model):
+
+class BaseModel(Model):
+
+    class Meta:
+        database = database
+
+
+class Order(BaseModel):
     name = CharField()
     instructions = TextField()
     counts = TextField()
