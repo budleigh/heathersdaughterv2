@@ -103,3 +103,6 @@ static/js/
 
 # sass
 .sass-cache/
+
+# built js
+static/build.js

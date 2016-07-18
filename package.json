@@ -5,9 +5,9 @@
   "main": "hd.py",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watchify": "watchify -vd -p browserify-hmr -e src/client/main.js -o static/js/build.js",
+    "watchify": "watchify -vd -p browserify-hmr -e src/client/main.js -o static/build.js",
     "dev": "npm-run-all --parallel watchify",
-    "build": "cross-env NODE_ENV=production browserify -e src/client/main.js | uglifyjs -c warnings=false -m > static/js/build.js",
+    "build": "cross-env NODE_ENV=production browserify -e src/client/main.js | uglifyjs -c warnings=false -m > static/build.js",
     "postinstall": "npm run build"
   },
   "browserify": {
