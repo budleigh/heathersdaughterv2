@@ -39,4 +39,6 @@
         width: 100%
         ul
             list-style: none
+            li
+                display: inline-block
 </style>
