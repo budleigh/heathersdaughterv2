@@ -1,10 +1,10 @@
 import datetime
+import os
 from peewee import *
 
-database = PostgresqlDatabase(
-    'hdtest', 
-    user='yoozer', 
-    password='Generalkdrama1{}'
+db_url = os.environ.get(
+    'DATABASE_URL', 
+    'postgres://yoozer:Generalkdrama1{}@localhost:5432/hdtest'
 )
 
 
