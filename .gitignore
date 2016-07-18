@@ -97,5 +97,10 @@ hd-env/
 # npm
 node_modules/
 
-# bower components
+# static stuff
 static/components/
+static/css/
+static/js/
+
+# sass
+.sass-cache/
