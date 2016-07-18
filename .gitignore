@@ -96,3 +96,6 @@ hd-env/
 
 # npm
 node_modules/
+
+# bower components
+static/components/

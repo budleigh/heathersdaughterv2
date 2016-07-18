@@ -1,0 +1,24 @@
+{
+  "name": "heathersdaughterv2",
+  "description": "cookies",
+  "main": "hd.py",
+  "authors": [
+    "budleigh"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "cookies"
+  ],
+  "homepage": "https://github.com/budleigh/heathersdaughterv2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
