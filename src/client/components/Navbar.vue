@@ -36,6 +36,7 @@
     @import "../variables.styl"
 
     .nav
+        background-color: $main
         width: 100%
         ul
             list-style: none
