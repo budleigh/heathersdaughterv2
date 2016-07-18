@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import App from './App.vue'
 import Order from './components/Order.vue'
 import Index from './components/Index.vue'
+import Gallery from './components/Gallery.vue'
 
 Vue.use(Router)
 
@@ -14,6 +15,9 @@ router.map({
     },
     '/order/': {
         component: Order
+    },
+    '/gallery/': {
+        component: Gallery
     }
 })
 

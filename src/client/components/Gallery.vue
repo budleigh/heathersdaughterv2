@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="gallery">
         PICTURES [][][][][]
     </div>
 </template>
@@ -16,6 +16,7 @@
     }
 </script>
 
-<style>
-
+<style lang="stylus">
+    .gallery
+        background-color: red
 </style>

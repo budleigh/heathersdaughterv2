@@ -25,6 +25,11 @@
                         title: 'Order',
                         url: '#/order/',
                         active: false
+                    },
+                    {
+                        title: 'Gallery',
+                        url: '#/gallery',
+                        active: false
                     }
                 ]
             }

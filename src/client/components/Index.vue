@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="index">
         Welcome to Heather's daughter bakery!
     </div>
 </template>
@@ -12,6 +12,7 @@
     }
 </script>
 
-<style>
-
+<style lang="stylus">
+    .index
+        background-color: blue
 </style>
