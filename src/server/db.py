@@ -1,11 +1,13 @@
 import datetime
 import os
 from peewee import *
+from playhouse.db_url import connect
 
 db_url = os.environ.get(
     'DATABASE_URL', 
-    'postgres://yoozer:Generalkdrama1{}@localhost:5432/hdtest'
+    'postgres://postgres:valerie1@localhost:5432/hdtest'
 )
+database = connect(db_url)
 
 
 class BaseModel(Model):
