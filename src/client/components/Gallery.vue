@@ -1,6 +1,8 @@
 <template>
     <div class="gallery">
-        PICTURES [][][][][]
+        <ul>
+            <li v-for="image in images"><img src="{{ image }}"</li>
+        </ul>
     </div>
 </template>
 
@@ -11,6 +13,14 @@
         data: function () {
             return {
                 menu: menu
+            }
+        },
+
+        computed: {
+            images: function () {
+                return this.menu.reduce(function (images, item) {
+                    return images.concat(item.images) 
+                }, [])
             }
         }
     }

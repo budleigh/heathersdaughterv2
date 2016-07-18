@@ -9,7 +9,10 @@ module.exports = [
         name: 'Almond brulee',
         price: 2,
         quantity: 2,
-        images: []
+        images: [            
+            '/static/img/IMG_1294.jpg',
+            '/static/img/IMG_1295.jpg'
+        ]
     },
     {
         name: 'Cranstachio bars',
