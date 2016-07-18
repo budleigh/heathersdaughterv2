@@ -93,3 +93,6 @@ ENV/
 
 # env
 hd-env/
+
+# npm
+node_modules/
