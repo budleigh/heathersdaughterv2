@@ -1,0 +1,25 @@
+{
+  "name": "heathersdaughterv2",
+  "version": "1.0.0",
+  "description": "cookies",
+  "main": "hd.py",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/budleigh/heathersdaughterv2.git"
+  },
+  "keywords": [
+    "cookies"
+  ],
+  "author": "budleigh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/budleigh/heathersdaughterv2/issues"
+  },
+  "homepage": "https://github.com/budleigh/heathersdaughterv2#readme",
+  "dependencies": {
+    "bower": "^1.7.9"
+  }
+}
