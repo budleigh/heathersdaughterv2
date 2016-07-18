@@ -18,8 +18,8 @@
 </template>
 
 <script>
-    var $ = require('jquery')
-    var menu = require('../menu.js')
+    import $ from 'jquery'
+    import menu from '../menu.js'
 
     export default {
         data () {

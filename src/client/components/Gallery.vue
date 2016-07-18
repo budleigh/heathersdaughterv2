@@ -1,13 +1,17 @@
 <template>
     <div>
-        Welcome to Heather's daughter bakery!
+        PICTURES [][][][][]
     </div>
 </template>
 
 <script>
+    import menu from '../menu.js'
+
     export default {
         data: function () {
-            return {}
+            return {
+                menu: menu
+            }
         }
     }
 </script>

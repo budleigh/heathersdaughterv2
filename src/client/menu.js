@@ -2,26 +2,31 @@ module.exports = [
     {
         name: 'Cinnamon bombs',
         price: 2,
-        quantity: 2
+        quantity: 2,
+        images: []
     },
     {
         name: 'Almond brulee',
         price: 2,
-        quantity: 2
+        quantity: 2,
+        images: []
     },
     {
         name: 'Cranstachio bars',
         price: 2,
-        quantity: 4
+        quantity: 4,
+        images: []
     },
     {
         name: 'Granola crunch',
         price: 4,
-        quantity: 2
+        quantity: 2,
+        images: []
     },
     {
         name: 'Cider shortbread',
         price: 2,
-        quantity: 2
+        quantity: 2,
+        images: []
     }
 ]
