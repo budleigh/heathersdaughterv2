@@ -7,11 +7,7 @@ col = db.col
 
 
 def save_order(order):
-    try:
-        col.insert_one(order)
-        return True
-    except:
-        return False
+    col.insert_one(order)
 
 
 def get_orders():
