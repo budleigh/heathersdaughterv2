@@ -1,7 +1,7 @@
 <template>
     <div>
         <ul>
-            <li v-for="image in images"><img v-bind:src="image"</li>
+            <li v-for="image in images"><img v-bind:src="image"></li>
         </ul>
     </div>
 </template>
