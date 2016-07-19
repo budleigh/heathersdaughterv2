@@ -70,7 +70,6 @@
                 var self = this
                 $.post({
                     url: '/order/',
-                    contentType: 'application/json; charset=utf-8'
                     data: JSON.stringify({
                         orderer: this.orderer,
                         order: this.counts
