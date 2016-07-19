@@ -70,10 +70,12 @@
                 var self = this
                 $.post({
                     url: '/order/',
-                    data: {
-                        order: this.counts,
-                        orderer: this.orderer
-                    },
+                    contentType: 'application/json; charset=utf-8'
+                    data: JSON.stringify({
+                        orderer: this.orderer,
+                        order: this.counts
+                        created: new Date().getDate()
+                    }),
                     success: function (data) {
                         console.log('ordered successfuly!')
                         self.clear()
