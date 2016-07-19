@@ -1,5 +1,5 @@
 <template>
-    <div class="order">
+    <div>
         ${{ total }}
         {{ counts | json }}
         <ul>
@@ -93,6 +93,4 @@
 </script>
 
 <style lang="stylus">
-    .order
-        background-color: yellow
 </style>

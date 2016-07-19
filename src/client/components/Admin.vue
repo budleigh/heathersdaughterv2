@@ -5,14 +5,12 @@
 </template>
 
 <script>
+    import menu from '../menu.js'
+
     export default {
         data: function () {
             return {
-                grid: {
-                    'intro': {
-                        'text': 'welcome to hd bakery'
-                    }
-                }
+                orders: []
             }
         }
     }

@@ -1,6 +1,6 @@
 <template>
-    <nav class="nav">
-        <ul>
+    <nav>
+        <ul>    
             <li v-for="page in pages">
                 <a href="{{ page.url }}">{{ page.title }}</a>
             </li>
@@ -17,7 +17,7 @@
                 // modifying these values will have no effect.
                 pages: [
                     {
-                        title: 'Home',
+                        title: 'Heather\'s Daughter Bakery',
                         url: '#/',
                         active: false
                     },
@@ -38,14 +38,4 @@
 </script>
 
 <style lang="stylus">
-    @import "../variables.styl"
-
-    .nav
-        border-bottom: 1px solid lightgrey
-        width: 100%
-        height: 130px
-        ul
-            list-style: none
-            li
-                display: inline-block
 </style>

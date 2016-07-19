@@ -1,7 +1,7 @@
 <template>
-    <div class="gallery">
+    <div>
         <ul>
-            <li v-for="image in images"><img src="{{ image }}"</li>
+            <li v-for="image in images"><img v-bind:src="image"</li>
         </ul>
     </div>
 </template>
@@ -27,6 +27,4 @@
 </script>
 
 <style lang="stylus">
-    .gallery
-        background-color: red
 </style>
