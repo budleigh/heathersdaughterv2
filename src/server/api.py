@@ -7,6 +7,7 @@ from src.server.db import *
 
 @app.route('/order/', methods=['POST'])
 def order():
+    logging.error(request.get_data())
     save_order(json.loads(request.get_data().decode()))
     return 'ok'
 
