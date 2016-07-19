@@ -75,6 +75,7 @@
                         order: this.counts,
                         created: new Date().getDate()
                     }),
+                    contentType: 'application/json',
                     success: function (data) {
                         console.log('ordered successfuly!')
                         self.clear()
