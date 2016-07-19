@@ -16,5 +16,4 @@ def save_order(order):
 
 def get_orders():
     for order in col.find({}):
-        del order['_id']
         yield order

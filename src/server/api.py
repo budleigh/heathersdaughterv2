@@ -1,5 +1,6 @@
 import json
 import logging
+from bson.json_util import dumps as bson_dumps
 from flask import request
 from hd import app
 from src.server.db import *
@@ -15,7 +16,7 @@ def order():
 
 @app.route('/orders/', methods=['POST'])
 def orders():
-    return json.dumps([order for order in get_orders()])
+    return bson_dumps([order for order in get_orders()])
 
 
 @app.route('/auth/', methods=['POST'])
