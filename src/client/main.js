@@ -4,6 +4,7 @@ import App from './App.vue'
 import Order from './components/Order.vue'
 import Index from './components/Index.vue'
 import Gallery from './components/Gallery.vue'
+import About from './components/About.vue'
 
 Vue.use(Router)
 
@@ -18,6 +19,9 @@ router.map({
     },
     '/gallery/': {
         component: Gallery
+    },
+    '/about/': {
+        component: About
     }
 })
 

@@ -28,7 +28,12 @@
                     },
                     {
                         title: 'Gallery',
-                        url: '#/gallery',
+                        url: '#/gallery/',
+                        active: false
+                    },
+                    {
+                        title: 'About',
+                        url: '#/about/',
                         active: false
                     }
                 ]
