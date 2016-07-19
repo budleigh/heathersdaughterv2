@@ -72,7 +72,7 @@
                     url: '/order/',
                     data: JSON.stringify({
                         orderer: this.orderer,
-                        order: this.counts
+                        order: this.counts,
                         created: new Date().getDate()
                     }),
                     success: function (data) {
