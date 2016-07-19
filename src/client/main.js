@@ -5,6 +5,7 @@ import Order from './components/Order.vue'
 import Index from './components/Index.vue'
 import Gallery from './components/Gallery.vue'
 import About from './components/About.vue'
+import Admin from './components/Admin.vue'
 
 Vue.use(Router)
 
@@ -22,6 +23,9 @@ router.map({
     },
     '/about/': {
         component: About
+    },
+    '/admin/': {
+        component: Admin
     }
 })
 
